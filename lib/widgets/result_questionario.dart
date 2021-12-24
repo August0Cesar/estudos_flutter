@@ -29,13 +29,16 @@ class ResultQuestionario extends StatelessWidget {
             style: TextStyle(fontSize: 28),
           ),
         ),
-        FlatButton(
+        TextButton(
           onPressed: onRestartQuiz,
+          style: TextButton.styleFrom(
+              backgroundColor: Colors.blue,
+              elevation: 15,
+              shadowColor: Colors.green),
           child: Text(
             "Reiniciar?",
-            style: TextStyle(fontSize: 16),
+            style: TextStyle(fontSize: 16, color: Colors.white),
           ),
-          textColor: Colors.blue,
         ),
       ],
     );
